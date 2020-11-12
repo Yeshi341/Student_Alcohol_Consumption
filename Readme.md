@@ -1,9 +1,8 @@
-# Student Alcohol Consumption
+# Factors predicting with Alcohol Consumption in Teens
 **Author:** Eon and Lhamu
 
 ## Overview 
----
-(Here will be the project overview)
+This purpose of this analysis is to generate insight into factors associated with 
 
 
 ## Business Problem
