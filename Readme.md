@@ -13,13 +13,7 @@ The New York City Department of Education serves over one million students annua
 —
 This study uses the Student Alcohol Consumption dataset was collected in 2005-2006.  There are two datasets associated with this study.  One one looks at performance in math classes and the other looks at performance on Portuguese language class.  These Classes were chosen because the researchers found those subjects to be most predictive of school success.  Our study only uses the Portuguese language class set because it is about 50% larger and there is a high number of duplicates among the two sets.   We sourced this dataset from the Kaggle data library.
 
-For this project we only used the dataset containing students who take the Portueguese language course. There are 649 observations and 33 attributes in total.  These original features seem to be designed to provide information about several areas of the student’s life.  Our study grouped these areas as such:
-
- Academic performance
- Home life
- Support environment
- Social life
- Logistical considerations
+For this project we only used the dataset containing students who take the Portueguese language course. There are 649 observations and 33 attributes in total.  These original features seem to be designed to provide information about several areas of the student’s life.  Our study grouped these areas as such:  Academic performance, Home life, Support environment, Social life, Logistical considerations
 
 To capture this organization with greater interpretability we designed features around these areas.  
 
