@@ -8,36 +8,95 @@ The purpose of this analysis is to generate insight into factors predictive of t
 ## Optimizing outcomes for New York City Students
 The New York City Department of Education serves over one million students annually.  The costs associated with alcohol abuse are wide and deep.  This large public school system has the potential to be a powerful leverage point from which to affect the lives of millions of people.  By identifying high risk students and funneling appropriate resources and interventions in their direction, we can impact millions of individual lives and the character of New York City life in aggregate.  
 
-## The Data 
-This study uses the Student Alcohol Consumption dataset was collected in 2005-2006.  There are two datasets associated with this study.  One one looks at performance in math classes and the other looks at performance on Portuguese language class.  These Classes were chosen because the researchers found those subjects to be most predictive of school success.  Our study only uses the Portuguese language class set because it is about 50% larger and there is a high number of duplicates among the two sets.   We sourced this dataset from the Kaggle data library.
+## The Data
+This dataset is sourced from the UCI Machine Learning Repository, ["Student Performance Data Set"](http://archive.ics.uci.edu/ml/datasets/Student+Performance), donated to UCI ML Repo by Prof. Paulo Cortez of University Minho. His original work on the dataset, "USING DATA MINING TO PREDICT SECONDARY SCHOOL STUDENT PERFORMANCE, can be found [here](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
-For this project we only used the dataset containing students who take the Portueguese language course. There are 649 observations and 33 attributes in total.  These original features seem to be designed to provide information about several areas of the student’s life.  Our study grouped these areas as such:  Academic performance, Home life, Support environment, Social life, Logistical considerations
+For this project we only used the dataset containing students who take the portueguese language course. There are 649 observations and 33 attributes in total.
 
-To capture this organization with greater interpretability we designed features around these areas.  
+**Variables Information:**
+1. school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
+2. sex - student's sex (binary: 'F' - female or 'M' - male)
+3. age - student's age (numeric: from 15 to 22)
+4. address - student's home address type (binary: 'U' - urban or 'R' - rural)
+5. famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
+6. Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
+7. Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)
+8. Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)
+9. Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
+10. Fjob - father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
+11. reason - reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')
+12. guardian - student's guardian (nominal: 'mother', 'father' or 'other')
+13. traveltime - home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)
+14. studytime - weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
+15. failures - number of past class failures (numeric: n if 1<=n<3, else 4)
+16. schoolsup - extra educational support (binary: yes or no)
+17. famsup - family educational support (binary: yes or no)
+18. paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
+19. activities - extra-curricular activities (binary: yes or no)
+20. nursery - attended nursery school (binary: yes or no)
+21. higher - wants to take higher education (binary: yes or no)
+22. internet - Internet access at home (binary: yes or no)
+23. romantic - with a romantic relationship (binary: yes or no)
+24. famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+25. freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+26. goout - going out with friends (numeric: from 1 - very low to 5 - very high)
+27. Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+28. Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+29. health - current health status (numeric: from 1 - very bad to 5 - very good)
+30. absences - number of school absences (numeric: from 0 to 93)
+31. G1 - first period grade (numeric: from 0 to 20)
+32. G2 - second period grade (numeric: from 0 to 20)
+33. G3 - final grade (numeric: from 0 to 20, output target)
 
 ## Methods
-Our preparation of the data involved dummy variable creation, binning alcohol consumption score into high and low categories, and building features around the most important clusters of original features.  
-The process of building the model involved extensive optimization of these features around logistic regression and K- nearest neighbors models. 
+
+The Cross-industry standard process for data mining, known as CRISP-DM of process model was followed
+1. Business Understanding
+2. Data Sourced
+3. Data Understanding - Data Cleaning and EDA
+4. Data Preparation - Feature Engineering and Feature Selection
+5. Modeling - Logistic Regression, KNN, Decision Tree
+6. Finding 
+7. Recommendations
 
 ## Results
-We used recall as our primary metric to bias efforts towards providing too much support instead of too little.  The final model had a recall score of 65%. The results of our effort confirms what most people would guess without a machine learning classification study of the data… that a more stable and harmonious home life, higher academic performance, and solid support structures around the student tend to predict lower alcohol consumption.  Less harmonious home life, lower academic performance, with lots of idle time and more active social life tend to predict higher alcohol consumption. 
+
+The Final Model was a Logistic Regression model with the following metrics:
+Test Accuracy score:  0.82
+Test F1 score:  0.59
+Test Recall score:  0.65 (Focusing on Minimizing False Negatives)
+
+![Confusion Matrix](images/Confusion_matrix.png)
+
+The results of our effort confirms what most people would guess without a machine learning classification study of the data… that a more stable and harmonious home life, higher academic performance, and solid support structures around the student tend to predict lower alcohol consumption.  Less harmonious home life, lower academic performance, with lots of idle time and more active social life tend to predict higher alcohol consumption. 
 
 ## Conclusions
-The relatively low recall score seems to point to the idea that identifying high risk students is difficult; in addition, this study does not have the power to identify the primary causes, so we recommend a multi-pronged approach. Interventions should aim several areas that suggest increased risk.  
-
+Based on the features that produced the best model, the main characteristics influencing alcohol use are listed below. Interventions should aim at several areas that suggest increased risk.
 1.  Family life - Resources allocated at higher level than the Department of Education to promote healthy family structures.  Family planning resources and education, and improved access to mental health resources would be two such areas of investment.
 2.  Academic support - tutoring, and mentoring, school
 3.  Deterrent efforts - Police resources to target those that might provide alcohol to teenagers and enforcing underage drinking laws.
 4.  Idle time - After school activities that can engage less motivated students may help to displace drinking as a recreational activity.
 
 ## Further Steps
-A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion.  A larger study cohort would be of benefit, and a cohort drawn from New York City Department of Education students would provide the best quality information for these purposes.
+A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion. 
+
+Although this dataset was very limitedin size it had a lot of good information collected on the attributes, it lacked in mainly number and diversity of observations, to truly generalize on the population. Further steps towards this business problem will be to source data that is reflective of the population of students here in the US.
 
 ## For More Information
-See the full analysis in the [Jupyter Notebook](___________) or review this [presentation](____________________)
+See the full analysis in the [Jupyter Notebook](Student_Alcohol_Consumption.ipynb) or review this [presentation](https://docs.google.com/presentation/d/1CcGmXfrhjVGh73J-wIGiYFqX3ekrncastnPEJldWL3o/edit#slide=id.ga9d7b3f7fa_0_37)
 
-For additional info, contact ___________ at __________________ and _______________ at _____________________
+For additional info, contact :
 
+Lhamu Tsering
+Email: boutlhamu@gmail.com 
+
+Eon Slemp 
+Email: eonslemp@gmail.com
 
 ## Repository Structure
-(Show repo map)
+
+* `Readme.md` : Readme file giving and overview of project
+* `Student_Alcohol_Consumption.ipynb` : Main Notebook showing model process
+* `EDA.ipynb` : Notebook showing Exploratory Data Analysis
+* `student-por.csv` : Data Set csv file
+* `images`: Folder containing saved images
