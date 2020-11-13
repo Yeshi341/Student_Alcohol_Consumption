@@ -1,5 +1,5 @@
 # Student Alcohol Consumption
-**Author:** Eon and Lhamu
+**Author:** Eon Slemp and Lhamu Tsering
 
 ## Overview 
 This Datascience project attempts to identify students at risk of alcohol abuse. Identifying the factors that influence youth alcohol abuse, can help
@@ -9,12 +9,11 @@ This Datascience project attempts to identify students at risk of alcohol abuse.
 * Improve life outcomes for NYC students
 
 ## Business Problem
----
 Alcohol is the most prevalent and commonly used substance among the youth in most countries around the world today. According to the cdc website on [Underage Drinking](https://www.cdc.gov/alcohol/fact-sheets/underage-drinking.htm) "Underage drinking is a significant public health problem in the U.S. Excessive drinking is responsible for more than 3,500 deaths and 210,000 years of potential life lost among people under age 21 each year.1 Underage drinking cost the U.S. $24 billion in 2010.2 There were approximately 119,000 emergency rooms visits by persons aged 12 to 21 for injuries and other conditions linked to alcohol in 2013." Therefore, Alcohol Consumption among students is a most necessary and important subject to be researched.  There are several negative effects of adolescent alcohol abuse like memory difficulties, brain develoopment, higher chances of having alcohol related issues as an adult
 We say that the children and youth are the pillars of the future. So, to be able to protect and prevent young students from becoming heavy alcohol drinkers becomes very important. One of the way to do this, is to first identify what factors or condition in a student or teenager's life makes them take decisions that lead them to become heavy drinkers. 
 
 ## Data 
----
+
 This dataset is sourced from the UCI Machine Learning Repository, ["Student Performance Data Set"](http://archive.ics.uci.edu/ml/datasets/Student+Performance), donated to UCI ML Repo by Prof. Paulo Cortez of University Minho. His original work on the dataset, "USING DATA MINING TO PREDICT SECONDARY SCHOOL STUDENT PERFORMANCE, can be found [here](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 For this project we only used the dataset containing students who take the portueguese language course. There are 649 observations and 33 attributes in total.
@@ -66,7 +65,7 @@ The Cross-industry standard process for data mining, known as CRISP-DM of proces
 7. Recommendations
 
 ## Results
----
+
 The Final Model was a Logistic Regression model with the following metrics:
 Test Accuracy score:  0.82
 Test F1 score:  0.59
@@ -92,11 +91,11 @@ Signals that might indicate high level of alcohol use can be lots of absences fr
 
 
 ## Further Steps
----
+
 Although this dataset was very limited had a lot of beef in terms of information collected on the attributes, it lacked in the mainly number and diversity of observations, to truly generalize on the population. Further steps towards this business problem will be to source data that is reflective of the population of students here in the US.
 
 ## For More Information
----
+
 See the full analysis in the [Jupyter Notebook](Student_Alcohol_Consumption.ipynb) or review this [presentation](https://docs.google.com/presentation/d/1CcGmXfrhjVGh73J-wIGiYFqX3ekrncastnPEJldWL3o/edit#slide=id.ga9d7b3f7fa_0_37)
 
 For additional info, contact :
@@ -108,10 +107,9 @@ Eon Slemp
 Email: eonslemp@gmail.com
 
 ## Repository Structure
----
+
 * `Readme.md` : Readme file giving and overview of project
 * `Student_Alcohol_Consumption.ipynb` : Main Notebook showing model process
 * `EDA.ipynb` : Notebook showing Exploratory Data Analysis
 * `student-por.csv` : Data Set csv file
 * `images`: Folder containing saved images
-*
