@@ -62,9 +62,9 @@ The Cross-industry standard process for data mining, known as CRISP-DM of proces
 ## Results
 
 The Final Model was a Logistic Regression model with the following metrics:
-Test Accuracy score:  0.82
-Test F1 score:  0.59
-Test Recall score:  0.65 (Focusing on Minimizing False Negatives)
+* Test Accuracy score:  0.82
+* Test F1 score:  0.59
+* Test Recall score:  0.65 (Focusing on Minimizing False Negatives)
 
 ![Confusion Matrix](images/Confusion_matrix.png)
 
