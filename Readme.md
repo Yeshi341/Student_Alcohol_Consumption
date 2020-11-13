@@ -3,7 +3,7 @@
 **Authors** Lhamu Tsering and Eon Slemp
 
 ## Overview and Objectives
-This purpose of this analysis is to generate insight into factors predictive of teenage alcohol abuse for the New York City Department of Education.   Adolescence is a critical time of neurological development.  During adolescence the brain is fitting itself to the environment to support behaviors that, ideally promote long term thriving.   Patterns of behavior established before the age of 20 will often persist for the life of the person.  The stimulus alcohol, like all addictive substances, causes an increase in neurotransmitters associated with reward seeking behavior.    Alcohol is the most widely used intoxicant by teenagers and adults.  Alcohol abuse effects the physical and behavioral health.  This analysis will inform policy in ways that can convert to improved life outcomes for individuals served by the Department of Education.
+The purpose of this analysis is to generate insight into factors predictive of teenage alcohol abuse for the New York City Department of Education.   Adolescence is a critical time of neurological development.  During adolescence the brain is fitting itself to the environment to support behaviors that, ideally promote long term thriving.   Patterns of behavior established before the age of 20 will often persist for the life of the person.  The stimulus alcohol, like all addictive substances, causes a kind of hijacking of the behavioral machinery critical to a good life.   Alcohol is the most widely used intoxicant by teenagers and adults.   This analysis will inform policy in ways that can convert to improved life outcomes for individuals served by the New York City Department of Education.
 
 ## Optimizing outcomes for New York City Students
 ---
@@ -25,22 +25,22 @@ To capture this organization with greater interpretability we designed features 
 
 ## Methods
 —
-Our preparation of the data involved extensive dummy variable creation, binning alcohol consumption score into high and low categories, and building features around the most important clusters of original features.  
+Our preparation of the data involved dummy variable creation, binning alcohol consumption score into high and low categories, and building features around the most important clusters of original features.  
 The process of building the model involved extensive optimization of these features around logistic regression and K- nearest neighbors models. 
 
 ## Results
 —
-We used recall as our primary metric to err on the side of providing too much support instead of too little.  The final model had a recall score of 65%.  The final model had a recall score of 65%.  The results of our study confirms what most people would guess without a machine learning classification study of the data… that a more stable and harmonious home life, higher academic performance, and solid support structures around the student tend to predict lower alcohol consumption.  Less harmonious home life, lower academic performance, with lots of idle time and more active social life tend to predict higher alcohol consumption. 
+We used recall as our primary metric to bias efforts towards providing too much support instead of too little.  The final model had a recall score of 65%. The results of our effort confirms what most people would guess without a machine learning classification study of the data… that a more stable and harmonious home life, higher academic performance, and solid support structures around the student tend to predict lower alcohol consumption.  Less harmonious home life, lower academic performance, with lots of idle time and more active social life tend to predict higher alcohol consumption. 
 
 ## Conclusions
 ---
 The relatively low recall score seems to point to the idea that identifying high risk students is difficult; in addition, this study does not have the power to identify the primary causes, so we recommend a multi-pronged approach. Interventions should aim several areas that suggest increased risk.  
 
-Family life - Resources allocated at higher level than the Department of Education to promote healthy family structures.  Family planning resources and education, and improved access to mental health resources would be two such areas of investment.
-Academic support - tutoring, and mentoring, school
-3.   Deterrent efforts - Police resources to target those that might provide alcohol to teenagers 		            	and enforcing underage drinking laws.
-4.   Idle time - After school activities that can engage less motivated students may help to 			displace drinking as a recreational activity.
+1.  Family life - Resources allocated at higher level than the Department of Education to promote healthy family structures.  Family planning resources and education, and improved access to mental health resources would be two such areas of investment.
+2.  Academic support - tutoring, and mentoring, school
+3.  Deterrent efforts - Police resources to target those that might provide alcohol to teenagers and enforcing underage drinking laws.
+4.  Idle time - After school activities that can engage less motivated students may help to displace drinking as a recreational activity.
 
 ## Further Steps
 —
-A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion.  A larger study cohort would be of benefit and a cohort drawn from New York City Department of Education students would provide the best quality information for our purposes.
+A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion.  A larger study cohort would be of benefit, and a cohort drawn from New York City Department of Education students would provide the best quality information for these purposes.
