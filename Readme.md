@@ -1,25 +1,19 @@
-# Student Alcohol Consumption
-**Author:** Eon Slemp and Lhamu Tsering
 
-## Overview 
-This Datascience project attempts to identify students at risk of alcohol abuse. Identifying the factors that influence youth alcohol abuse, can help
-* Prioritize resources 
-* Develop new interventions
-* Reduce likelihood of dropout
-* Improve life outcomes for NYC students
+# Factors Predicting Alcohol Consumption in Teens
+**Authors** Lhamu Tsering and Eon Slemp
 
-## Business Problem
-Alcohol is the most prevalent and commonly used substance among the youth in most countries around the world today. According to the cdc website on [Underage Drinking](https://www.cdc.gov/alcohol/fact-sheets/underage-drinking.htm) "Underage drinking is a significant public health problem in the U.S. Excessive drinking is responsible for more than 3,500 deaths and 210,000 years of potential life lost among people under age 21 each year.1 Underage drinking cost the U.S. $24 billion in 2010.2 There were approximately 119,000 emergency rooms visits by persons aged 12 to 21 for injuries and other conditions linked to alcohol in 2013." Therefore, Alcohol Consumption among students is a most necessary and important subject to be researched.  There are several negative effects of adolescent alcohol abuse like memory difficulties, brain develoopment, higher chances of having alcohol related issues as an adult
-We say that the children and youth are the pillars of the future. So, to be able to protect and prevent young students from becoming heavy alcohol drinkers becomes very important. One of the way to do this, is to first identify what factors or condition in a student or teenager's life makes them take decisions that lead them to become heavy drinkers. 
+## Overview and Objectives
+The purpose of this analysis is to generate insight into factors predictive of teenage alcohol abuse for the New York City Department of Education.   Adolescence is a critical time of neurological development.  During adolescence the brain is fitting itself to the environment to support behaviors that, ideally promote long term thriving.   Patterns of behavior established before the age of 20 will often persist for a lifetime.  The stimulus alcohol, like all addictive substances, causes a kind of hijacking of the behavioral machinery critical to a good life.   Alcohol is the most widely used intoxicant by teenagers and adults.   This analysis will inform policy in ways that can convert to improved life outcomes for individuals served by the New York City Department of Education.
 
-## Data 
+## Optimizing outcomes for New York City Students
+The New York City Department of Education serves over one million students annually.  The costs associated with alcohol abuse are wide and deep.  This large public school system has the potential to be a powerful leverage point from which to affect the lives of millions of people.  By identifying high risk students and funneling appropriate resources and interventions in their direction, we can impact millions of individual lives and the character of New York City life in aggregate.  
 
+## The Data
 This dataset is sourced from the UCI Machine Learning Repository, ["Student Performance Data Set"](http://archive.ics.uci.edu/ml/datasets/Student+Performance), donated to UCI ML Repo by Prof. Paulo Cortez of University Minho. His original work on the dataset, "USING DATA MINING TO PREDICT SECONDARY SCHOOL STUDENT PERFORMANCE, can be found [here](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
 For this project we only used the dataset containing students who take the portueguese language course. There are 649 observations and 33 attributes in total.
 
 **Variables Information:**
-
 1. school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
 2. sex - student's sex (binary: 'F' - female or 'M' - male)
 3. age - student's age (numeric: from 15 to 22)
@@ -55,6 +49,7 @@ For this project we only used the dataset containing students who take the portu
 33. G3 - final grade (numeric: from 0 to 20, output target)
 
 ## Methods
+
 The Cross-industry standard process for data mining, known as CRISP-DM of process model was followed
 1. Business Understanding
 2. Data Sourced
@@ -73,29 +68,21 @@ Test Recall score:  0.65 (Focusing on Minimizing False Negatives)
 
 ![Confusion Matrix](images/Confusion_matrix.png)
 
+The results of our effort confirms what most people would guess without a machine learning classification study of the data… that a more stable and harmonious home life, higher academic performance, and solid support structures around the student tend to predict lower alcohol consumption.  Less harmonious home life, lower academic performance, with lots of idle time and more active social life tend to predict higher alcohol consumption. 
+
 ## Conclusions
-The features that were selected and produced the best interpretable model are (also showing relation to the target variable based on the model):
-
-1. sex = negative relation to student alcohol consumption behavior
-2. absences = positive relation to student alcohol consumption behavior
-3. G1= negative relation to student alcohol consumption behavior
-4. G2 = negative relation to student alcohol consumption behavior
-5. G3 = negative relation to student alcohol consumption behavior
-6. idle = negative relation to student alcohol consumption behavior
-7. grade_avg = negative relation to student alcohol consumption behavior
-8. goout_2 =negative relation to student alcohol consumption behavior
-9. goout_3 =negative relation to student alcohol consumption behavior
-10.goout_5 = positive relation to student alcohol consumption behavior
-
-Signals that might indicate high level of alcohol use can be lots of absences from classroom, falling grades, too much time spent going out. For guardians and authorities who supervise students, these monitoring these factors might help in identifying problems with alcohol early on. With this, incentives to not use alcohol may be put in place during school hours and at home. 
-
+Based on the features that produced the best model, the main characteristics influencing alcohol use are listed below. Interventions should aim at several areas that suggest increased risk.
+1.  Family life - Resources allocated at higher level than the Department of Education to promote healthy family structures.  Family planning resources and education, and improved access to mental health resources would be two such areas of investment.
+2.  Academic support - tutoring, and mentoring, school
+3.  Deterrent efforts - Police resources to target those that might provide alcohol to teenagers and enforcing underage drinking laws.
+4.  Idle time - After school activities that can engage less motivated students may help to displace drinking as a recreational activity.
 
 ## Further Steps
+A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion. 
 
-Although this dataset was very limited had a lot of beef in terms of information collected on the attributes, it lacked in the mainly number and diversity of observations, to truly generalize on the population. Further steps towards this business problem will be to source data that is reflective of the population of students here in the US.
+Although this dataset was very limitedin size it had a lot of good information collected on the attributes, it lacked in mainly number and diversity of observations, to truly generalize on the population. Further steps towards this business problem will be to source data that is reflective of the population of students here in the US.
 
 ## For More Information
-
 See the full analysis in the [Jupyter Notebook](Student_Alcohol_Consumption.ipynb) or review this [presentation](https://docs.google.com/presentation/d/1CcGmXfrhjVGh73J-wIGiYFqX3ekrncastnPEJldWL3o/edit#slide=id.ga9d7b3f7fa_0_37)
 
 For additional info, contact :
