@@ -44,3 +44,14 @@ The relatively low recall score seems to point to the idea that identifying high
 ## Further Steps
 —
 A study designed to reveal the causal relationships among the features would give greater insight into how to prioritize interventions.  My instinct is to say that all of the other observed features derive somehow from the quality of the students’ family environment,  but only a properly designed study can support such a conclusion.  A larger study cohort would be of benefit, and a cohort drawn from New York City Department of Education students would provide the best quality information for these purposes.
+
+## For More Information
+---
+See the full analysis in the [Jupyter Notebook](___________) or review this [presentation](____________________)
+
+For additional info, contact ___________ at __________________ and _______________ at _____________________
+
+
+## Repository Structure
+---
+(Show repo map)
