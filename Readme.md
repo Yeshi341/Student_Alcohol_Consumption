@@ -5,7 +5,7 @@
 ## Overview and Objectives
 This purpose of this analysis is to generate insight into factors predictive of teenage alcohol abuse for the New York City Department of Education.   Adolescence is a critical time of neurological development.  During adolescence the brain is fitting itself to the environment to support behaviors that, ideally promote long term thriving.   Patterns of behavior established before the age of 20 will often persist for the life of the person.  The stimulus alcohol, like all addictive substances, causes an increase in neurotransmitters associated with reward seeking behavior.    Alcohol is the most widely used intoxicant by teenagers and adults.  Alcohol abuse effects the physical and behavioral health.  This analysis will inform policy in ways that can convert to improved life outcomes for individuals served by the Department of Education.
 
-##Optimizing outcomes for New York City Students
+## Optimizing outcomes for New York City Students
 ---
 The New York City Department of Education serves over one million students annually.  The costs associated with alcohol abuse are wide and deep.  This large public school system has the potential to be a powerful leverage point from which to affect the lives of millions of people.  By identifying high risk students and funneling appropriate resources and interventions in their direction, we can impact millions of individual lives and the character of New York City life in aggregate.  
 
