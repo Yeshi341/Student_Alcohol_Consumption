@@ -1,5 +1,5 @@
 
-# Factors predicting Alcohol Consumption in Teens
+# Factors Predicting Alcohol Consumption in Teens
 **Authors** Lhamu Tsering and Eon Slemp
 
 ## Overview and Objectives
