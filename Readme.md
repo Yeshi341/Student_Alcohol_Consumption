@@ -83,7 +83,7 @@ A study designed to reveal the causal relationships among the features would giv
 Although this dataset was very limitedin size it had a lot of good information collected on the attributes, it lacked in mainly number and diversity of observations, to truly generalize on the population. Further steps towards this business problem will be to source data that is reflective of the population of students here in the US.
 
 ## For More Information
-See the full analysis in the [Jupyter Notebook](Student_Alcohol_Consumption.ipynb) or review this [presentation](https://docs.google.com/presentation/d/1CcGmXfrhjVGh73J-wIGiYFqX3ekrncastnPEJldWL3o/edit#slide=id.ga9d7b3f7fa_0_37)
+See the full analysis in the [Jupyter Notebook](Student_Alcohol_Consumption.ipynb) 
 
 For additional info, contact :
 
