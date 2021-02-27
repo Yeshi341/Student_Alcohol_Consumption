@@ -11,7 +11,7 @@ The New York City Department of Education serves over one million students annua
 ## The Data
 This dataset is sourced from the UCI Machine Learning Repository, ["Student Performance Data Set"](http://archive.ics.uci.edu/ml/datasets/Student+Performance), donated to UCI ML Repo by Prof. Paulo Cortez of University Minho. His original work on the dataset, "USING DATA MINING TO PREDICT SECONDARY SCHOOL STUDENT PERFORMANCE, can be found [here](http://www3.dsi.uminho.pt/pcortez/student.pdf)
 
-For this project we only used the dataset containing students who take the portueguese language course. There are 649 observations and 33 attributes in total. The description for all the features can be found in the Data Dictionary [file](data-dictionary.md)
+For this project we only used the dataset containing students who take the portueguese language course. There are 649 observations and 33 attributes in total. The description for all the features can be found in the Data Dictionary [file](data/Data-Dictionary.md)
 
 ## Methods
 
